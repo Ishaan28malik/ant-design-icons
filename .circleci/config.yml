@@ -66,6 +66,8 @@ jobs:
     steps:
       - checkout
       - *attach_workspace
+      # test usage
+      - run: cat /home/circleci/ant-design-icons/packages/icons-svg/lib/asn/AccountBookFilled.js
       - run: yarn react:ci
 
 workflows:
